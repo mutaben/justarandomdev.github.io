@@ -2,7 +2,6 @@
 layout: post
 title:  "From Pseudo-Random Number Generators to TOTP with Swift - Part 1"
 date:   2019-12-28 00:00:01 +0100
-categories: swift
 ---
 
 Randomness is pretty fascinating. One could argue that what we perceive as random is just a combination of hardly predictable causality.

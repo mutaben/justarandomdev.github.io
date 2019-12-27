@@ -76,7 +76,7 @@ Something along those lines would happen:
 var carRng = CarKeyRNG(seed: 1729)
 var carKeyRng = CarKeyRNG(seed: 1729)
 
-// Generate a random number by overriding the default RNG with ours
+// Generate numbers only on the key side
 Int.random(in: 1...1000, using: &carKeyRng) // 917
 Int.random(in: 1...1000, using: &carKeyRng) // 924
 Int.random(in: 1...1000, using: &carKeyRng) // 87

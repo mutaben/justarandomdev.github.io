@@ -18,7 +18,7 @@ Let's start with a simple problem. Have you ever wondered how does a [car remote
 
 Simple right? Just put a secret combination in both the car and the remote and you're done?
 
-Not quite, because one could eavesdrop the radio signal sent from the remote, and build another key for your car.
+Not quite, because one could eavesdrop the radio signal sent from the remote, and build another key fob for your car.
 
 So the code has to be changing, in order to avoid replay attacks.
 
@@ -58,17 +58,17 @@ The ampersand before the multiplication and the addition ensures we wrap around 
 
 **This is just an implementation example, please do not use it in production unless you've properly reviewed its cryptographic accuracy!**
 
-So with this hypothetical code in your car and its remotes, you just have to seed them with the same secret initial value. You can program a new remote fresh from the factory to work with your car. Everything is fine right?
+So with this hypothetical code in your car and its remotes, you just have to seed them with the same secret initial value. You can program a new key fob fresh from the factory to work with your car. Everything is fine right?
 
-Well there's a last piece missing. Let's say somebody activates the remote key out of range. The key will have used a few numbers, and the car will not have received them, they will be out of sync.
+Well there's a last piece missing. Let's say somebody activates the remote key out of range. The key fob will have used a few numbers, and the car will not have received them, they will be out of sync.
 
 What happens next time you try to open your car?
 
 Well first, the controller on the car will keep a sliding window of acceptable codes, for instance the last and next ten around a given seed.
 
-But what if you went all out and really smashed the buttons a hundred, a thousand times? Or what about the spare key, which isn't in sync at all?
+But what if you went all out and really smashed the buttons a hundred, a thousand times? Or what about the spare key fob, which isn't in sync at all?
 
-The bad news is that you will probably have to manually open your car, with the actual key. The good news is, your remote key is not out of order. When you will insert the key in the car's keyway to start it, it will electronically sync with the on board system to be on the same page, i.e. have the current seed be the same. Then they will start generating the same numbers again.
+The bad news is that you will probably have to manually open your car, with the actual key. The good news is, your remote key fob is not out of order. When you will insert the key in the car's keyway to start it, it will electronically sync with the on board system to be on the same page, i.e. have the current seed be the same. Then they will start generating the same numbers again.
 
 Something along those lines would happen:
 

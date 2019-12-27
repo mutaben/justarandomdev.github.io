@@ -104,7 +104,7 @@ I think that's a fun problem, solved in an elegant way. But we are not (yet?) pr
 
 That brings us to our next topic. Have you ever wondered how two-factor authentication works? Not the SMS kind (although it follows pretty much the same principles), the TOTP one. When you have a [physical device][yubikey], or an app like 1Password or Authy generating a one time password to supplement after entering your password, as an additional security layer.
 
-Unlike the common (and unfortunately unsecure) SMS method, which is a two-step authentication, this method is a two factor one. It relies on a different factor than the password. The password is something _you know_ whereas the one-time password from a device or app is _something you have_. (The third common factor is usually biometric, meaning _something you are_.)
+Unlike the common (and unfortunately unsecure) SMS method, which is a two-step authentication, this method is a [two factor one][two-factor-auth]. It relies on a different factor than the password. The password is something _you know_ whereas the one-time password from a device or app is _something you have_. (The third common factor is usually biometric, meaning _something you are_.)
 
 The basics are the same, but the implementation differs since we don't rely on only an initial seed, but current time is used as well.
 
@@ -116,4 +116,4 @@ If it piqued your interest, stay tuned for part two, where we will explore TOTP 
 [lcrng]: https://en.wikipedia.org/wiki/Linear_congruential_generator
 [srng]: https://developer.apple.com/documentation/swift/systemrandomnumbergenerator
 [yubikey]: https://en.wikipedia.org/wiki/YubiKey
-
+[two-factor-auth]: https://en.wikipedia.org/wiki/Multi-factor_authentication

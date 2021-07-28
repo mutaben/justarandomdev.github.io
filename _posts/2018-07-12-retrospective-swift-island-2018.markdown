@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Retrospective on Swift Island 2018"
-date:   2019-07-12 00:00:01 +0100
+date:   2018-07-12 00:00:01 +0100
 ---
 
 Last week, I had the chance to attend Swift Island 2018, [the very first edition of this event](https://swiftisland.nl), in [Texel, Netherlands](https://maps.apple.com/?q=53.114790,4.897072).
@@ -31,7 +31,7 @@ So after an understandable initial surprise (again, not the conference type I to
 Fast forward, and it's Tuesday 3rd of July, in a lovely venue, [right by the Wadden Sea](https://maps.apple.com/?q=53.114790,4.897072).
 
 <figure class="image">
-  <img src="/images/swift_island/prins_hendrik_hotel..jpg" alt="Photo of the Prins Hendrik Hotel">
+  <img src="/images/swift_island/prins_hendrik_hotel.jpg" alt="Photo of the Prins Hendrik Hotel">
   <figcaption>The venue: Prins Hendrik Hotel</figcaption>
 </figure>
 
